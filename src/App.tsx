@@ -13,8 +13,8 @@ import {
   BookOpen,
   ArrowRight
 } from 'lucide-react';
-import { Course } from '../types';
-import { COURSES_DATA } from '../data/agencyData';
+// import { Course } from '../types';
+// import { COURSES_DATA } from '../data/agencyData';
 
 interface CoursesSectionProps {
   onEnrollCourse?: (course: Course) => void;
