@@ -13,15 +13,12 @@ import {
   BookOpen,
   ArrowRight
 } from 'lucide-react';
+const COURSES_DATA: any[] = [];
 // import { Course } from '../types';
 // import { COURSES_DATA } from '../data/agencyData';
-
 interface CoursesSectionProps {
-  onEnrollCourse?: (course: Course) => void;
+  onEnrollCourse?: (course: any) => void;
 }
-
-export const CoursesSection: React.FC<CoursesSectionProps> = ({ onEnrollCourse }) => {
-  const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [searchQuery, setSearchQuery] = useState<string>('');
 
   const categories = ['All', 'E-Commerce', 'Development', 'Design', 'Content', 'Freelancing'];
